@@ -1,4 +1,4 @@
-function checkAnswer( correctAnser ="4") {
+function checkAnswer( 'correctAnser' ="4") {
     // Function body
 }
 
