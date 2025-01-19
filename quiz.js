@@ -2,16 +2,17 @@ function checkAnswer( correctAnswer= "4") {
     // Function body
 }
 
-document.querySelector (name= "quiz")
+const correctAnswer = document.querySelector ('quiz')
 
 let userAnswer = 4
 
 console.log(userAnswer);
 
-if (4) {
-    "Correct! Well done."
-} else {
-    "That's Incorrect. Try again"
+
+if (correctAnswer >= 4) {
+    console.log ('Correct! Well dont.');
+} else if (userAnswer >= 22 , 3) {
+    console.log ("That's incorrect. Try again!");
 }
 
 document.getElementById("submit-answer")
