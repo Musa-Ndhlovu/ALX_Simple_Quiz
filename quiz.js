@@ -39,6 +39,7 @@ function getSelectedAnswer(correctAnswer) {
         }
     
 
+const radios = document.querySelector("quiz-container")
 document.getElementById("submit-answer")
 
 button.addEventsListner('click', function(checkAnswer) {alert ('button clicked!');});
