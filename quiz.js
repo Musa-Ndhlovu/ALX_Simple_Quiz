@@ -40,6 +40,24 @@ function getSelectedAnswer(correctAnswer) {
     
 
 const radios = document.querySelector("quiz-container")
+
+function checkAnswerWithFeedback(questionName, correctAnswer) {
+
+    const userAnswer = getSelectedAnswer(questionName);
+}
+    if (userAnswer === null) {
+        console.log(`No answer selected. Please choose an answer.`);
+        return "Please select an answer!";
+    }
+
+    if (userAnswer === correctAnswer) {
+        console.log(`Correct! Well done.`);
+        return "That's correct! Well done!";
+    } else {
+        console.log(`Incorrect. Try again`);
+        return "That's incorrect. Try again!";
+    }
+
 document.getElementById("submit-answer")
 
 button.addEventsListner('click', function(checkAnswer) {alert ('button clicked!');});
