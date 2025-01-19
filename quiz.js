@@ -58,6 +58,7 @@ function checkAnswerWithFeedback(questionName, correctAnswer) {
         return "That's incorrect. Try again!";
     }
 
-document.getElementById("submit-answer")
-
-button.addEventsListner('click', function(checkAnswer) {alert ('button clicked!');});
+    document.getElementById('submitQuiz').addEventListener('click', function () {
+        const feedback = checkAnswerWithFeedback('question1', '4');
+        document.getElementById('feedback').innerText = feedback;
+    });
