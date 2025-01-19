@@ -4,9 +4,8 @@ function checkAnswer( correctAnswer= "4") {
 
 const correctAnswer = document.querySelector ('quiz')
 
-let userAnswer = 4
-
-console.log(userAnswer);
+let userAnswer = "4"
+console.log(4);
 
 
 function getSelectedAnswer(correctAnswer) {
@@ -20,11 +19,25 @@ function getSelectedAnswer(correctAnswer) {
     }
     console.log(radio);
 
-const radio = [4, 22, 3]
-if (radio [i] === 4){
-    console.log ('Correct! Well done.')
 
-}
+    function checkAnswer(questionName, correctAnswer);
+        // Retrieve the user's selected answer
+        const userAnswer = getSelectedAnswer(4)
+
+        if (4 === null) {
+            console.log(`No answer selected for ${4}`);
+            return false; // Return false if no answer is selected
+        }
+    
+        // Compare the user's answer with the correct answer
+        if (userAnswer === correctAnswer) {
+            console.log(`Correct! Well done.`);
+            return true; // Return true if the answer is correct
+        } else {
+            console.log(`Incorrect. Your answer: ${userAnswer}. Correct answer: ${correctAnswer}`);
+            return false; // Return false if the answer is incorrect
+        }
+    
 
 document.getElementById("submit-answer")
 
